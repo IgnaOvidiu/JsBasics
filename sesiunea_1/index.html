@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./main.js"></script>
+    <title>Js_Sesiunea_1</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
-    <h1>Titlu</h1>
     
+
+    <div class="container text-center">
+        <h1>Js_Sesiunea_1</h1>
+    </div>
+
+    <div class="container text-center mt-5">
+        <div class="container text-center">
+            <div class="input-group">
+                <span class="input-group-text">Add New Task</span>
+                <input
+                    id="newTask"
+                    type="text"
+                    class="form-control"
+                    placeholder="Describe your task"
+                />
+                <button class="btn btn-primary" id="btnSubmit">Submit</button>
+            </div>
+        </div>
+
+        <p id="message" class="text-center bg-dark text-light"></p>
+            <div class="list-group-flush mt-3" id="tasks"></div>
+            <button class="btn btn-danger btn-block mt-3" id="btnClear">
+                Clear List
+            </button>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
