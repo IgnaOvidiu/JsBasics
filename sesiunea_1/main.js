@@ -1,7 +1,9 @@
 const firstName = 'John';
 const lastName = 'Doe';
+const age = 29;
+const hobby = 'Motorcycles'
 
-console.log(firstName + ' ' + lastName)
+console.log(firstName + ' ' + lastName + 'is' + ' ' +age + ' ' + 'and he likes' + ' ' +hobby)
 
 
 const submitButton = document.getElementById('btnSubmit');
