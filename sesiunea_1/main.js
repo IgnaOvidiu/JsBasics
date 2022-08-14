@@ -1,3 +1,9 @@
+const firstName = 'John';
+const lastName = 'Doe';
+
+console.log(firstName + ' ' + lastName)
+
+
 const submitButton = document.getElementById('btnSubmit');
 const tasks = document.getElementById('tasks');
 const clearList = document.getElementById('btnClear')
@@ -6,8 +12,6 @@ const messageElement = document.getElementById('message')
 submitButton.addEventListener('click', addTask);
 clearList.addEventListener('click', clearTask)
 tasks.addEventListener('click', taskClick)
-
-console.log('tasks')
 
 function addTask(){
     const newTask = document.getElementById('newTask');
