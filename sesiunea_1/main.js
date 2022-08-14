@@ -5,7 +5,9 @@ var hobby = 'Motorcycles'
 
 console.log(` ${firstName} ${lastName} is ${age} and he likes ${hobby} `)
 
+let input = prompt('Welcome to your ToDo list for today - Type "Ready" to start');
 
+console.log(input)
 
 
 
