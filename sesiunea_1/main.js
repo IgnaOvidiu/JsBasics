@@ -1,9 +1,12 @@
-const firstName = 'John';
-const lastName = 'Doe';
-const age = 29;
-const hobby = 'Motorcycles'
+let firstName = 'John';
+let lastName = 'Doe';
+var age = 29;
+var hobby = 'Motorcycles'
 
 console.log(` ${firstName} ${lastName} is ${age} and he likes ${hobby} `)
+
+
+
 
 
 const submitButton = document.getElementById('btnSubmit');
