@@ -25,3 +25,8 @@ switch (money) {
         console.log('Au Intrat banii')
         break;
 }
+
+
+for (let index = 0; index < 11; index++) {
+    console.log(index)
+}
