@@ -9,9 +9,6 @@ const createUser = (user) => {
         age: user.age,
         success: true
     }
-
-    console.log(user)
-
 }
 
 
@@ -36,4 +33,8 @@ const Ovidiu = createUser ({
 })
 
 console.log(Ovidiu);
+
+
+
+
 
