@@ -14,7 +14,7 @@ const createUser = (user) => {
 
     users.push(formatedUser);
 
-    return fullName;
+    return formatedUser;
 }
 
 
@@ -24,7 +24,7 @@ const isUserValid = (user) => {
     if(user.password.lenght === 0) return false;
     if(user.country.lenght === 0) return false;
     if(user.age <= 18) return false;
-    if(user.country != "Romania") return;
+    if(user.country != "Romania") return false;
 
     return true;
 }
@@ -35,7 +35,23 @@ const Ovidiu = createUser ({
     password: "test",
     country: "Romania",
     age: 29,
-    hasAgreed: "Yes",
+});
+
+
+createUser ({
+    firstName: "Igna",
+    lastName: "Ovidiu",
+    password: "test",
+    country: "Romania",
+    age: 29,
+});
+
+createUser ({
+    firstName: "Igna",
+    lastName: "Ovidiu",
+    password: "test",
+    country: "Germania",
+    age: 29,
 });
 
 createUser ({
@@ -44,27 +60,10 @@ createUser ({
     password: "test",
     country: "Romania",
     age: 29,
-    hasAgreed: "Yes",
-});
-createUser ({
-    firstName: "Igna",
-    lastName: "Ovidiu",
-    password: "test",
-    country: "Romania",
-    age: 29,
-    hasAgreed: "Yes",
-});
-createUser ({
-    firstName: "Igna",
-    lastName: "Ovidiu",
-    password: "test",
-    country: "Romania",
-    age: 29,
-    hasAgreed: "Yes",
 });
 
-
-console.log(users)
+console.log(Ovidiu);
+console.log(users);
 
 
 
