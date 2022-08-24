@@ -1,14 +1,20 @@
+const users = [];
+
 const createUser = (user) => {
     if(!isUserValid(user)) return;
 
-    const formattedName = `${user.firstName} ${user.lastName}`;
+    const fullName = `${user.firstName} ${user.lastName}`;
 
-    
-    return {
-        name: formattedName,
+    const formatedUser = {
+        name: fullName,
         age: user.age,
         success: true
+
     }
+
+    users.push(formatedUser);
+
+    return fullName;
 }
 
 
@@ -30,9 +36,36 @@ const Ovidiu = createUser ({
     country: "Romania",
     age: 29,
     hasAgreed: "Yes",
-})
+});
 
-console.log(Ovidiu);
+createUser ({
+    firstName: "Igna",
+    lastName: "Ovidiu",
+    password: "test",
+    country: "Romania",
+    age: 29,
+    hasAgreed: "Yes",
+});
+createUser ({
+    firstName: "Igna",
+    lastName: "Ovidiu",
+    password: "test",
+    country: "Romania",
+    age: 29,
+    hasAgreed: "Yes",
+});
+createUser ({
+    firstName: "Igna",
+    lastName: "Ovidiu",
+    password: "test",
+    country: "Romania",
+    age: 29,
+    hasAgreed: "Yes",
+});
+
+
+console.log(users)
+
 
 
 
