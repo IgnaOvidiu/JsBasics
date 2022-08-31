@@ -9,7 +9,6 @@ const userWeight = document.querySelector("#weight")
 const userEmail = document.querySelector("#email")
 const userPhoneNumber = document.querySelector("#phoneNumber")
 const userSubmit = document.querySelector("#submitForm")
-const messageElement = document.getElementById('message')
 
 
 
