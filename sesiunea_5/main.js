@@ -42,9 +42,13 @@ function submitData() {
     const userlist = document.querySelector(".userlist")
 
     userlist.innerHTML = `<li>${userFirstName.value} ${userLastName.value} ${userDateOfBirth.value} ${userEmail.value} ${userPhoneNumber.value}</li>`
+    Users.createUser();
+
+    const message = document.querySelector(".message")
+
+    message.innerHTML = "User Created Successfully."
 }
 
-function createUser () {
+function createUser() {
     console.log(`User Was Created Successfully 👤`)
-    this.userCreated = true;
 }
