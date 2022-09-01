@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: relative;
+    margin: 10px;
+}
