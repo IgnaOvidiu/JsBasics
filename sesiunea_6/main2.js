@@ -21,10 +21,10 @@ setInterval(cycleLights, 6000);
 
 
 let timeleft = 5;
-const downloadTimer = setInterval(() => {
-  if (timeleft <= 0) {
-    clearInterval(downloadTimer);
-  }
+const colorChangeTimer = setInterval(() => {
+    if (timeleft <= 0) {
+        clearInterval(colorChangeTimer);
+      }
   document.getElementById("progressBar").value = 5 - timeleft;
   timeleft -= 1;
 }, 1000);
