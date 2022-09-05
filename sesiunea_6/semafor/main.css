@@ -63,3 +63,8 @@ button {
 progress {
     margin-bottom: 20px;
 }
+
+#timer {
+    color: rgb(190, 190, 190);
+    margin-bottom: 20px;
+}

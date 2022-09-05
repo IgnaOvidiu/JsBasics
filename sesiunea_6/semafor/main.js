@@ -1,6 +1,8 @@
 const dot1 = document.querySelector("#dot1")
 const dot2 = document.querySelector("#dot2")
 const dot3 = document.querySelector("#dot3")
+const time = document.querySelector("#timer")
+
 
 function cycleLights() {
     if (dot1.classList.contains("red")) {
@@ -17,14 +19,20 @@ function cycleLights() {
       }
 }
 
-setInterval(cycleLights, 6000);
+setInterval(cycleLights, 10000);
 
+let counter = 10;
+function timer() {
+  counter--;
+  if(counter == 0) {
+    counter = 10;
+  }
+  time.innerHTML = counter;
+}
 
-let timeleft = 5;
 const colorChangeTimer = setInterval(() => {
-    if (timeleft <= 0) {
-        clearInterval(colorChangeTimer);
-      }
-  document.getElementById("progressBar").value = 5 - timeleft;
-  timeleft -= 1;
+   timer();
 }, 1000);
+
+
+
