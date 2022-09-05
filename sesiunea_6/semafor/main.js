@@ -7,7 +7,7 @@ const time = document.querySelector("#timer")
 function cycleLights() {
     if (dot1.classList.contains("red")) {
         dot1.classList.remove("red");
-        dot3.classList.add("green")
+        dot3.classList.add("green");
       } 
       else if (dot3.classList.contains("green")) {
         dot3.classList.remove("green");
